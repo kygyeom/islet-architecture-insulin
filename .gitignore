@@ -1,11 +1,12 @@
 __pycache__/
 *.pyc
-# raw simulation output and run folders
-runs/
-DATA/
-DATA_c/
+# raw simulation output and run folders (anchored: this disk is case-insensitive,
+# so a bare "DATA/" would also hide the data/ folder)
+/runs/
+/fortran/DATA/
+/fortran/DATA_c/
+/structure/pdb_regenerated/
 config_ini_3D/
-structure/pdb_regenerated/
 # build products
 *.exe
 *.o

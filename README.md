@@ -1,7 +1,5 @@
 # islet-architecture-insulin
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23684317.svg)](https://doi.org/10.5281/zenodo.23684317)
-
 Simulation of a single pancreatic islet of Langerhans as a network of coupled
 endocrine-cell oscillators, used to study how the spatial arrangement of α, β and δ cells
 affects insulin secretion.
@@ -50,7 +48,7 @@ The original simulation code by Taegeun Song is kept unchanged in [`original/`](
 fortran/     islet simulation (Core and Mix structures)
 structure/   3D structure generator, structure files (.pdb), 3D drawing
 scripts/     batch runs, data extraction, figures, random-forest analysis
-data/        processed simulation results
+data/        processed simulation results and a raw output example (data/raw_example/)
 results/     figures
 original/    original code as received
 docs/        detailed reproduction guide
@@ -67,6 +65,9 @@ python structure/draw_islet_3d.py structure/pdb/core/config_ini_3D4,4.pdb -o isl
 
 # run the islet simulation (short test, ~2 min; drop SIZES/NTS for a full batch)
 SIZES=1 NTS=1 scripts/run_batch.sh 0.6 test
+
+# plot the raw output example (one Core and one Mix run)
+python scripts/plot_raw_example.py
 
 # figures and analysis from the processed data
 python scripts/make_fig2.py

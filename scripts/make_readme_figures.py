@@ -3,7 +3,7 @@
   results/readme_timeseries.png    glucose and the three hormone outputs of one Core islet
   results/readme_interactions.png  cell-to-cell interaction network of the model
 
-Example run (data/example_trace/): Core islet, P_beta = 60 %, D = 114 um, K = 0.4,
+Example run (data/raw_example/core/): Core islet, P_beta = 60 %, D = 114 um, K = 0.4,
 glucose protocol 7.0 -> 15.4 -> 4.2 mM (inputs at 0-60, 60-120 and 140-200 min).
 Files are <stem>_islet1_6_2_1_0_ext2g0.dat with columns (time [min], value):
 gt = G/G0, ha / hb / hd = mean output per alpha / beta / delta cell.
@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Circle, FancyArrowPatch
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-DATA = ROOT / "data" / "example_trace"
+DATA = ROOT / "data" / "raw_example" / "core"
 OUT = ROOT / "results"
 G0 = 7.0                                            # baseline glucose (mM)
 C = {"alpha": "#d62728", "beta": "#1f77b4", "delta": "#2ca02c", "glu": "#333333"}
