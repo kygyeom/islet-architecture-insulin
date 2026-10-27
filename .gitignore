@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+# raw simulation output and run folders
+runs/
+DATA/
+DATA_c/
+config_ini_3D/
+structure/pdb_regenerated/
+# build products
+*.exe
+*.o
+*.mod
+a.out
+fort.*
+tmp_fname
+tmp_nt
+tmp_ep
