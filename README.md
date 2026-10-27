@@ -29,6 +29,19 @@ The model and the islet structure follow the work of **Junghyo Jo** and colleagu
 
 The original simulation code by Taegeun Song is kept unchanged in [`original/`](original/).
 
+<p align="center">
+  <img src="results/readme_interactions.png" width="38%">
+  <br>
+  <em>Interactions between neighbouring cells in the model.</em>
+</p>
+
+<p align="center">
+  <img src="results/readme_timeseries.png" width="75%">
+  <br>
+  <em>Example run: blood glucose and the hormone output per cell (glucagon, insulin, somatostatin)
+  of one islet while the glucose input is changed (7.0 → 15.4 → 4.2 mM).</em>
+</p>
+
 ## Repository
 
 ```
