@@ -95,7 +95,7 @@ Every figure can be rebuilt from the processed tables in `data/` in a few minute
 without running the simulation (Quick start).
 The simulation code is also included. With it, every run can be repeated from scratch.
 
-**License:** to be decided (see the end of this file).  **DOI:** TODO.
+**License:** code MIT, data CC BY 4.0 (see the end of this file).
 
 ---
 
@@ -272,7 +272,6 @@ Each file has 2 columns (time in min, value) and 2000 lines, one line every 10 s
 
 Each run writes 7 files (about 0.7 MB in total). The raw time series of the four
 batches (2,592 runs) are **not** in this repository because of their size.
-<!-- TODO: decide whether to deposit the raw time series (~1.9 GB) on Zenodo; give the DOI here. -->
 The scripts in Steps 1–2 regenerate them.
 
 ### Processed data (`data/`)
@@ -356,10 +355,8 @@ Notes:
 
 ## License
 
-<!-- TODO: choose a license (e.g. MIT or BSD-3-Clause for the code, CC BY 4.0 for the data)
-     and confirm the reuse terms of the structure-generation code by D.-T. Hoang (APCTP). -->
-To be decided.
+Code: MIT (see `LICENSE`). Data and figures in `data/` and `results/`: CC BY 4.0.
 
 ## Citation
 
-<!-- TODO: manuscript citation and Zenodo DOI. -->
+See `CITATION.cff`.

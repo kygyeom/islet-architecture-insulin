@@ -76,8 +76,9 @@ See [`docs/REPRODUCE.md`](docs/REPRODUCE.md) for all options.
 
 ## Citation
 
-If you use this code, please cite the model papers above. A citation for this work will be added on publication.
+If you use this code, please cite the model papers above and this repository (see [`CITATION.cff`](CITATION.cff)).
 
 ## License
 
-To be added.
+Code: [MIT](LICENSE). Data and figures in `data/` and `results/`: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Raw simulation time series are not included; they can be regenerated with the code (see [`docs/REPRODUCE.md`](docs/REPRODUCE.md)).

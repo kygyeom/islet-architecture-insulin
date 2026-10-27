@@ -1,0 +1,69 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below, together with the model papers listed in README.md."
+title: "islet-architecture-insulin: oscillator simulation of pancreatic islet architecture"
+version: 1.0.0
+date-released: 2026-10-27
+license: MIT
+repository-code: "https://github.com/kygyeom/islet-architecture-insulin"
+type: software
+authors:
+  - family-names: Kim
+    given-names: Yun Gyeom
+    affiliation: "Department of Physics, Graduate School, Kongju National University"
+  - family-names: Jo
+    given-names: Junghyo
+    affiliation: "Department of Physics Education, Seoul National University"
+  - family-names: Song
+    given-names: Taegeun
+    affiliation: "Department of Data Information and Physics, Kongju National University"
+keywords:
+  - pancreatic islet
+  - insulin secretion
+  - coupled oscillators
+  - computational biology
+references:
+  - type: article
+    title: "A local counter-regulatory motif modulates the global phase of hormonal oscillations"
+    authors:
+      - family-names: Park
+        given-names: Dong-Ho
+      - family-names: Song
+        given-names: Taegeun
+      - family-names: Hoang
+        given-names: Danh-Tai
+      - family-names: Xu
+        given-names: Jin
+      - family-names: Jo
+        given-names: Junghyo
+    journal: "Scientific Reports"
+    volume: 7
+    start: "1602"
+    year: 2017
+    doi: 10.1038/s41598-017-01806-0
+  - type: article
+    title: "A conserved rule for pancreatic islet organization"
+    authors:
+      - family-names: Hoang
+        given-names: Danh-Tai
+      - family-names: Matsunari
+        given-names: Hitomi
+      - family-names: Nagaya
+        given-names: Masaki
+      - family-names: Nagashima
+        given-names: Hiroshi
+      - family-names: Millis
+        given-names: J. Michael
+      - family-names: Witkowski
+        given-names: Piotr
+      - family-names: Periwal
+        given-names: Vipul
+      - family-names: Hara
+        given-names: Manami
+      - family-names: Jo
+        given-names: Junghyo
+    journal: "PLOS ONE"
+    volume: 9
+    issue: 10
+    start: "e110384"
+    year: 2014
+    doi: 10.1371/journal.pone.0110384
