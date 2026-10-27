@@ -38,7 +38,7 @@ The original simulation code by Taegeun Song is kept unchanged in [`original/`](
 <p align="center">
   <img src="results/readme_timeseries.png" width="75%">
   <br>
-  <em>Example run: blood glucose and the hormone output per cell (glucagon, insulin, somatostatin)
+  <em>Example run: external glucose input I(t), blood glucose and the hormone output per cell (glucagon, insulin, somatostatin)
   of one islet while the glucose input is changed (7.0 → 15.4 → 4.2 mM).</em>
 </p>
 

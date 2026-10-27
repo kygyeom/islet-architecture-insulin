@@ -33,8 +33,19 @@ def timeseries():
             ("ha", "Glucagon\n(α cells)", C["alpha"], 1.0),
             ("hb", "Insulin\n(β cells)", C["beta"], 1.0),
             ("hd", "Somatostatin\n(δ cells)", C["delta"], 1.0)]
-    fig, axes = plt.subplots(4, 1, figsize=(7.5, 6.2), sharex=True)
-    for ax, (stem, label, col, scale) in zip(axes, rows):
+    fig, axes = plt.subplots(5, 1, figsize=(7.5, 7.3), sharex=True,
+                             gridspec_kw={"height_ratios": [0.8, 1, 1, 1, 1]})
+    # external glucose input I(t) of the simulation (code: st = X*extamp*g0, X = 0.6, extamp = 2)
+    ti = np.array([0, 60, 60, 120, 120, 140, 140, 200, 200])
+    ii = np.array([0, 0, 8.4, 8.4, 0, 0, -2.8, -2.8, 0])
+    ax = axes[0]
+    ax.fill_between(ti, ii, 0, color=C["glu"], alpha=0.15, lw=0)
+    ax.plot(ti, ii, color=C["glu"], lw=1.2)
+    ax.axhline(0, color=GRID, lw=0.9, zorder=0)
+    ax.set_ylabel("Input I(t)\n(mM/min)", fontsize=10, color=INK, rotation=0, ha="right", va="center", labelpad=8)
+    ax.set_yticks([-2.8, 0, 8.4]); ax.set_yticklabels(["−2.8", "0", "8.4"]); ax.set_ylim(-6, 11)
+    ax.spines[["top", "right"]].set_visible(False); ax.tick_params(labelsize=9, colors=MUTED)
+    for ax, (stem, label, col, scale) in zip(axes[1:], rows):
         t, v = load(stem)
         ax.plot(t, v * scale, color=col, lw=1.2)
         ax.set_ylabel(label, fontsize=10, color=INK, rotation=0, ha="right", va="center", labelpad=8)
