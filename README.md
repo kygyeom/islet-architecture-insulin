@@ -1,5 +1,7 @@
 # islet-architecture-insulin
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23684317.svg)](https://doi.org/10.5281/zenodo.23684317)
+
 Simulation of a single pancreatic islet of Langerhans as a network of coupled
 endocrine-cell oscillators, used to study how the spatial arrangement of α, β and δ cells
 affects insulin secretion.
